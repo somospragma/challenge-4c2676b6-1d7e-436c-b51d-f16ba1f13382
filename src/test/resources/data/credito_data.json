@@ -1,0 +1,42 @@
+{
+  "partitionEquivalence": [
+    {
+      "monto": 10000,
+      "plazo": 12,
+      "tipoCredito": "HIPOTEKARIO",
+      "perfilSolicitante": "PREMIUM"
+    },
+    {
+      "monto": 50000,
+      "plazo": 24,
+      "tipoCredito": "PERSONAL",
+      "perfilSolicitante": "REGULAR"
+    }
+  ],
+  "limitValues": [
+    {
+      "monto": 1,
+      "plazo": 1,
+      "tipoCredito": "PERSONAL",
+      "perfilSolicitante": "BASICO"
+    },
+    {
+      "monto": 999999,
+      "plazo": 60,
+      "tipoCredito": "HIPOTEKARIO",
+      "perfilSolicitante": "PREMIUM"
+    }
+  ],
+  "decisionTables": [
+    {
+      "condiciones": [
+        {"monto": 10000, "plazo": 12},
+        {"monto": 20000, "plazo": 24}
+      ],
+      "acciones": [
+        {"estado": "APROBADO"},
+        {"estado": "RECHAZADO"}
+      ]
+    }
+  ]
+}
